@@ -30,6 +30,7 @@
 		E55C5C70262224F900331B66 /* UserDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E55C5C6F262224F900331B66 /* UserDetails.storyboard */; };
 		E55C5C7A2622262D00331B66 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C5C782622262D00331B66 /* UserTableViewCell.swift */; };
 		E55C5C7B2622262D00331B66 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E55C5C792622262D00331B66 /* UserTableViewCell.xib */; };
+		E55C5C87262229F500331B66 /* LoadableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C5C86262229F500331B66 /* LoadableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		E55C5C6F262224F900331B66 /* UserDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserDetails.storyboard; sourceTree = "<group>"; };
 		E55C5C782622262D00331B66 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		E55C5C792622262D00331B66 /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		E55C5C86262229F500331B66 /* LoadableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				E55C5B9F262213A100331B66 /* Resources */,
 				E55C5BA0262213C000331B66 /* Config */,
 				E55C5BB3262214C400331B66 /* Networking */,
+				E55C5C85262229E700331B66 /* Helpers */,
 				E55C5C492622218200331B66 /* Models */,
 				E55C5BA1262213D100331B66 /* Views */,
 			);
@@ -253,6 +256,14 @@
 				E55C5C782622262D00331B66 /* UserTableViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		E55C5C85262229E700331B66 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E55C5C86262229F500331B66 /* LoadableCell.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,6 +418,7 @@
 				E55C5C4B2622218800331B66 /* FAUser.swift in Sources */,
 				E55C5BCB2622164000331B66 /* FAQuery.swift in Sources */,
 				E55C5B642622133E00331B66 /* AppDelegate.swift in Sources */,
+				E55C5C87262229F500331B66 /* LoadableCell.swift in Sources */,
 				E55C5BA32622140800331B66 /* Config.swift in Sources */,
 				E55C5C6B262224EF00331B66 /* UserDetailsViewController.swift in Sources */,
 			);

@@ -7,21 +7,12 @@
 
 import UIKit
 
-class UserTableViewCell: UITableViewCell {
+class UserTableViewCell: UITableViewCell, LoadableCell {
 
-    static var cellIdentifier: String { String(describing: self) }
-
-    override var reuseIdentifier: String { Self.cellIdentifier }
+    @IBOutlet private var nameLabel: UILabel!
+    @IBOutlet private var addressLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
 }

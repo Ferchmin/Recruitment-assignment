@@ -14,7 +14,10 @@ class UsersViewController: UIViewController {
 
     @IBOutlet private var tableView: UITableView! {
         didSet {
-            tableView.register(UserTableViewCell.self, forCellReuseIdentifier: UserTableViewCell.cellIdentifier)
+            tableView.register(UINib(nibName: UserTableViewCell.cellIdentifier, bundle: nil),
+                               forCellReuseIdentifier: UserTableViewCell.cellIdentifier)
+
+            tableView.contentInset.top = 20.0
         }
     }
 
@@ -30,9 +33,7 @@ class UsersViewController: UIViewController {
         Observable.just(())
             .map { UsersQuery() }
             .flatMapLatest { FARequest(query: $0).send() }
-            .bind(to: tableView.rx.items(cellIdentifier: UserTableViewCell.cellIdentifier)) { index, model, cell in
-              cell.textLabel?.text = model.name
-            }
+            .bind(to: tableView.rx.items(cellIdentifier: UserTableViewCell.cellIdentifier)) { index, model, cell in }
             .disposed(by: disposeBag)
 
     }
