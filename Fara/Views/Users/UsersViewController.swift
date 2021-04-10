@@ -6,10 +6,17 @@
 //
 
 import UIKit
-import RxSwift
 import RxCocoa
+import RxDataSources
+import RxSwift
 
 class UsersViewController: UIViewController {
+
+    @IBOutlet private var tableView: UITableView! {
+        didSet {
+            tableView.register(UserTableViewCell.self, forCellReuseIdentifier: UserTableViewCell.cellIdentifier)
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,10 +30,11 @@ class UsersViewController: UIViewController {
         Observable.just(())
             .map { UsersQuery() }
             .flatMapLatest { FARequest(query: $0).send() }
-            .subscribe(onNext: { result in
-                result.forEach { print("\($0)") }
-            })
+            .bind(to: tableView.rx.items(cellIdentifier: UserTableViewCell.cellIdentifier)) { index, model, cell in
+              cell.textLabel?.text = model.name
+            }
             .disposed(by: disposeBag)
+
     }
 }
 

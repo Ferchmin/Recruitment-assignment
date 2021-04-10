@@ -26,6 +26,10 @@
 		E55C5C4B2622218800331B66 /* FAUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C5C4A2622218800331B66 /* FAUser.swift */; };
 		E55C5C532622220B00331B66 /* FAAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C5C522622220B00331B66 /* FAAddress.swift */; };
 		E55C5C5B262223CB00331B66 /* FACompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C5C5A262223CB00331B66 /* FACompany.swift */; };
+		E55C5C6B262224EF00331B66 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C5C6A262224EF00331B66 /* UserDetailsViewController.swift */; };
+		E55C5C70262224F900331B66 /* UserDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E55C5C6F262224F900331B66 /* UserDetails.storyboard */; };
+		E55C5C7A2622262D00331B66 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C5C782622262D00331B66 /* UserTableViewCell.swift */; };
+		E55C5C7B2622262D00331B66 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E55C5C792622262D00331B66 /* UserTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +73,10 @@
 		E55C5C4A2622218800331B66 /* FAUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAUser.swift; sourceTree = "<group>"; };
 		E55C5C522622220B00331B66 /* FAAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAAddress.swift; sourceTree = "<group>"; };
 		E55C5C5A262223CB00331B66 /* FACompany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FACompany.swift; sourceTree = "<group>"; };
+		E55C5C6A262224EF00331B66 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
+		E55C5C6F262224F900331B66 /* UserDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserDetails.storyboard; sourceTree = "<group>"; };
+		E55C5C782622262D00331B66 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		E55C5C792622262D00331B66 /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,8 +230,9 @@
 		E55C5C5F2622244F00331B66 /* Users */ = {
 			isa = PBXGroup;
 			children = (
-				E55C5B672622133E00331B66 /* UsersViewController.swift */,
 				E55C5B692622133E00331B66 /* Users.storyboard */,
+				E55C5B672622133E00331B66 /* UsersViewController.swift */,
+				E55C5C772622261300331B66 /* Cells */,
 			);
 			path = Users;
 			sourceTree = "<group>";
@@ -231,8 +240,19 @@
 		E55C5C602622245800331B66 /* UserDetails */ = {
 			isa = PBXGroup;
 			children = (
+				E55C5C6F262224F900331B66 /* UserDetails.storyboard */,
+				E55C5C6A262224EF00331B66 /* UserDetailsViewController.swift */,
 			);
 			path = UserDetails;
+			sourceTree = "<group>";
+		};
+		E55C5C772622261300331B66 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E55C5C792622262D00331B66 /* UserTableViewCell.xib */,
+				E55C5C782622262D00331B66 /* UserTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,7 +372,9 @@
 			files = (
 				E55C5B702622133E00331B66 /* LaunchScreen.storyboard in Resources */,
 				E55C5B6D2622133E00331B66 /* Assets.xcassets in Resources */,
+				E55C5C70262224F900331B66 /* UserDetails.storyboard in Resources */,
 				E55C5B6B2622133E00331B66 /* Users.storyboard in Resources */,
+				E55C5C7B2622262D00331B66 /* UserTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,10 +403,12 @@
 				E55C5C532622220B00331B66 /* FAAddress.swift in Sources */,
 				E55C5BD02622167600331B66 /* FARequest.swift in Sources */,
 				E55C5B682622133E00331B66 /* UsersViewController.swift in Sources */,
+				E55C5C7A2622262D00331B66 /* UserTableViewCell.swift in Sources */,
 				E55C5C4B2622218800331B66 /* FAUser.swift in Sources */,
 				E55C5BCB2622164000331B66 /* FAQuery.swift in Sources */,
 				E55C5B642622133E00331B66 /* AppDelegate.swift in Sources */,
 				E55C5BA32622140800331B66 /* Config.swift in Sources */,
+				E55C5C6B262224EF00331B66 /* UserDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
