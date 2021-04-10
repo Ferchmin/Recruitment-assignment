@@ -3,29 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		E55C5B642622133E00331B66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C5B632622133E00331B66 /* AppDelegate.swift */; };
-		E55C5B662622133E00331B66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C5B652622133E00331B66 /* SceneDelegate.swift */; };
 		E55C5B682622133E00331B66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C5B672622133E00331B66 /* ViewController.swift */; };
 		E55C5B6B2622133E00331B66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E55C5B692622133E00331B66 /* Main.storyboard */; };
 		E55C5B6D2622133E00331B66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E55C5B6C2622133E00331B66 /* Assets.xcassets */; };
 		E55C5B702622133E00331B66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E55C5B6E2622133E00331B66 /* LaunchScreen.storyboard */; };
-		E55C5B7B2622133F00331B66 /* FaraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C5B7A2622133F00331B66 /* FaraTests.swift */; };
-		E55C5B862622133F00331B66 /* FaraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C5B852622133F00331B66 /* FaraUITests.swift */; };
+		E55C5BA32622140800331B66 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C5BA22622140800331B66 /* Config.swift */; };
+		E55C5BB62622154500331B66 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E55C5BB52622154500331B66 /* RxSwift */; };
+		E55C5BBA2622154500331B66 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = E55C5BB92622154500331B66 /* RxRelay */; };
+		E55C5BBC2622154500331B66 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = E55C5BBB2622154500331B66 /* RxCocoa */; };
+		E55C5BBE2622154500331B66 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = E55C5BBD2622154500331B66 /* RxBlocking */; };
+		E55C5BC42622158E00331B66 /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = E55C5BC32622158E00331B66 /* RxDataSources */; };
+		E55C5BC62622158E00331B66 /* Differentiator in Frameworks */ = {isa = PBXBuildFile; productRef = E55C5BC52622158E00331B66 /* Differentiator */; };
+		E55C5BCB2622164000331B66 /* FAQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C5BCA2622164000331B66 /* FAQuery.swift */; };
+		E55C5BD02622167600331B66 /* FARequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C5BCF2622167600331B66 /* FARequest.swift */; };
+		E55C5C2F2622191800331B66 /* FaraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C5C2E2622191800331B66 /* FaraUITests.swift */; };
+		E55C5C3F2622192100331B66 /* FaraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C5C3E2622192100331B66 /* FaraTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E55C5B772622133F00331B66 /* PBXContainerItemProxy */ = {
+		E55C5C312622191800331B66 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E55C5B582622133E00331B66 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E55C5B5F2622133E00331B66;
 			remoteInfo = Fara;
 		};
-		E55C5B822622133F00331B66 /* PBXContainerItemProxy */ = {
+		E55C5C412622192100331B66 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E55C5B582622133E00331B66 /* Project object */;
 			proxyType = 1;
@@ -37,18 +45,24 @@
 /* Begin PBXFileReference section */
 		E55C5B602622133E00331B66 /* Fara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fara.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E55C5B632622133E00331B66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E55C5B652622133E00331B66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E55C5B672622133E00331B66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E55C5B6A2622133E00331B66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E55C5B6C2622133E00331B66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E55C5B6F2622133E00331B66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E55C5B712622133E00331B66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E55C5B762622133F00331B66 /* FaraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E55C5B7A2622133F00331B66 /* FaraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaraTests.swift; sourceTree = "<group>"; };
 		E55C5B7C2622133F00331B66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E55C5B812622133F00331B66 /* FaraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E55C5B852622133F00331B66 /* FaraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaraUITests.swift; sourceTree = "<group>"; };
 		E55C5B872622133F00331B66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E55C5BA22622140800331B66 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		E55C5BCA2622164000331B66 /* FAQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQuery.swift; sourceTree = "<group>"; };
+		E55C5BCF2622167600331B66 /* FARequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FARequest.swift; sourceTree = "<group>"; };
+		E55C5C2C2622191800331B66 /* FaraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E55C5C2E2622191800331B66 /* FaraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaraUITests.swift; sourceTree = "<group>"; };
+		E55C5C302622191800331B66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E55C5C3C2622192100331B66 /* FaraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E55C5C3E2622192100331B66 /* FaraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaraTests.swift; sourceTree = "<group>"; };
+		E55C5C402622192100331B66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,17 +70,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E55C5BC62622158E00331B66 /* Differentiator in Frameworks */,
+				E55C5BBA2622154500331B66 /* RxRelay in Frameworks */,
+				E55C5BBC2622154500331B66 /* RxCocoa in Frameworks */,
+				E55C5BC42622158E00331B66 /* RxDataSources in Frameworks */,
+				E55C5BB62622154500331B66 /* RxSwift in Frameworks */,
+				E55C5BBE2622154500331B66 /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E55C5B732622133F00331B66 /* Frameworks */ = {
+		E55C5C292622191800331B66 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E55C5B7E2622133F00331B66 /* Frameworks */ = {
+		E55C5C392622192100331B66 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -82,6 +102,8 @@
 				E55C5B622622133E00331B66 /* Fara */,
 				E55C5B792622133F00331B66 /* FaraTests */,
 				E55C5B842622133F00331B66 /* FaraUITests */,
+				E55C5C2D2622191800331B66 /* FaraUITests */,
+				E55C5C3D2622192100331B66 /* FaraTests */,
 				E55C5B612622133E00331B66 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,8 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				E55C5B602622133E00331B66 /* Fara.app */,
-				E55C5B762622133F00331B66 /* FaraTests.xctest */,
-				E55C5B812622133F00331B66 /* FaraUITests.xctest */,
+				E55C5C2C2622191800331B66 /* FaraUITests.xctest */,
+				E55C5C3C2622192100331B66 /* FaraTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,12 +122,12 @@
 			isa = PBXGroup;
 			children = (
 				E55C5B632622133E00331B66 /* AppDelegate.swift */,
-				E55C5B652622133E00331B66 /* SceneDelegate.swift */,
+				E55C5B9F262213A100331B66 /* Resources */,
+				E55C5BA0262213C000331B66 /* Config */,
+				E55C5BB3262214C400331B66 /* Networking */,
+				E55C5BA1262213D100331B66 /* Views */,
 				E55C5B672622133E00331B66 /* ViewController.swift */,
 				E55C5B692622133E00331B66 /* Main.storyboard */,
-				E55C5B6C2622133E00331B66 /* Assets.xcassets */,
-				E55C5B6E2622133E00331B66 /* LaunchScreen.storyboard */,
-				E55C5B712622133E00331B66 /* Info.plist */,
 			);
 			path = Fara;
 			sourceTree = "<group>";
@@ -128,6 +150,58 @@
 			path = FaraUITests;
 			sourceTree = "<group>";
 		};
+		E55C5B9F262213A100331B66 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E55C5B6E2622133E00331B66 /* LaunchScreen.storyboard */,
+				E55C5B6C2622133E00331B66 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E55C5BA0262213C000331B66 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				E55C5B712622133E00331B66 /* Info.plist */,
+				E55C5BA22622140800331B66 /* Config.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		E55C5BA1262213D100331B66 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E55C5BB3262214C400331B66 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E55C5BCA2622164000331B66 /* FAQuery.swift */,
+				E55C5BCF2622167600331B66 /* FARequest.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E55C5C2D2622191800331B66 /* FaraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E55C5C2E2622191800331B66 /* FaraUITests.swift */,
+				E55C5C302622191800331B66 /* Info.plist */,
+			);
+			path = FaraUITests;
+			sourceTree = "<group>";
+		};
+		E55C5C3D2622192100331B66 /* FaraTests */ = {
+			isa = PBXGroup;
+			children = (
+				E55C5C3E2622192100331B66 /* FaraTests.swift */,
+				E55C5C402622192100331B66 /* Info.plist */,
+			);
+			path = FaraTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,45 +218,53 @@
 			dependencies = (
 			);
 			name = Fara;
+			packageProductDependencies = (
+				E55C5BB52622154500331B66 /* RxSwift */,
+				E55C5BB92622154500331B66 /* RxRelay */,
+				E55C5BBB2622154500331B66 /* RxCocoa */,
+				E55C5BBD2622154500331B66 /* RxBlocking */,
+				E55C5BC32622158E00331B66 /* RxDataSources */,
+				E55C5BC52622158E00331B66 /* Differentiator */,
+			);
 			productName = Fara;
 			productReference = E55C5B602622133E00331B66 /* Fara.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E55C5B752622133F00331B66 /* FaraTests */ = {
+		E55C5C2B2622191800331B66 /* FaraUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E55C5B8D2622133F00331B66 /* Build configuration list for PBXNativeTarget "FaraTests" */;
+			buildConfigurationList = E55C5C332622191800331B66 /* Build configuration list for PBXNativeTarget "FaraUITests" */;
 			buildPhases = (
-				E55C5B722622133F00331B66 /* Sources */,
-				E55C5B732622133F00331B66 /* Frameworks */,
-				E55C5B742622133F00331B66 /* Resources */,
+				E55C5C282622191800331B66 /* Sources */,
+				E55C5C292622191800331B66 /* Frameworks */,
+				E55C5C2A2622191800331B66 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E55C5B782622133F00331B66 /* PBXTargetDependency */,
-			);
-			name = FaraTests;
-			productName = FaraTests;
-			productReference = E55C5B762622133F00331B66 /* FaraTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		E55C5B802622133F00331B66 /* FaraUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E55C5B902622133F00331B66 /* Build configuration list for PBXNativeTarget "FaraUITests" */;
-			buildPhases = (
-				E55C5B7D2622133F00331B66 /* Sources */,
-				E55C5B7E2622133F00331B66 /* Frameworks */,
-				E55C5B7F2622133F00331B66 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E55C5B832622133F00331B66 /* PBXTargetDependency */,
+				E55C5C322622191800331B66 /* PBXTargetDependency */,
 			);
 			name = FaraUITests;
 			productName = FaraUITests;
-			productReference = E55C5B812622133F00331B66 /* FaraUITests.xctest */;
+			productReference = E55C5C2C2622191800331B66 /* FaraUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		E55C5C3B2622192100331B66 /* FaraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E55C5C432622192100331B66 /* Build configuration list for PBXNativeTarget "FaraTests" */;
+			buildPhases = (
+				E55C5C382622192100331B66 /* Sources */,
+				E55C5C392622192100331B66 /* Frameworks */,
+				E55C5C3A2622192100331B66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E55C5C422622192100331B66 /* PBXTargetDependency */,
+			);
+			name = FaraTests;
+			productName = FaraTests;
+			productReference = E55C5C3C2622192100331B66 /* FaraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -196,11 +278,11 @@
 					E55C5B5F2622133E00331B66 = {
 						CreatedOnToolsVersion = 12.4;
 					};
-					E55C5B752622133F00331B66 = {
+					E55C5C2B2622191800331B66 = {
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = E55C5B5F2622133E00331B66;
 					};
-					E55C5B802622133F00331B66 = {
+					E55C5C3B2622192100331B66 = {
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = E55C5B5F2622133E00331B66;
 					};
@@ -215,13 +297,17 @@
 				Base,
 			);
 			mainGroup = E55C5B572622133E00331B66;
+			packageReferences = (
+				E55C5BB42622154500331B66 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				E55C5BC22622158E00331B66 /* XCRemoteSwiftPackageReference "RxDataSources" */,
+			);
 			productRefGroup = E55C5B612622133E00331B66 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				E55C5B5F2622133E00331B66 /* Fara */,
-				E55C5B752622133F00331B66 /* FaraTests */,
-				E55C5B802622133F00331B66 /* FaraUITests */,
+				E55C5C2B2622191800331B66 /* FaraUITests */,
+				E55C5C3B2622192100331B66 /* FaraTests */,
 			);
 		};
 /* End PBXProject section */
@@ -237,14 +323,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E55C5B742622133F00331B66 /* Resources */ = {
+		E55C5C2A2622191800331B66 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E55C5B7F2622133F00331B66 /* Resources */ = {
+		E55C5C3A2622192100331B66 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -258,40 +344,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E55C5BD02622167600331B66 /* FARequest.swift in Sources */,
 				E55C5B682622133E00331B66 /* ViewController.swift in Sources */,
+				E55C5BCB2622164000331B66 /* FAQuery.swift in Sources */,
 				E55C5B642622133E00331B66 /* AppDelegate.swift in Sources */,
-				E55C5B662622133E00331B66 /* SceneDelegate.swift in Sources */,
+				E55C5BA32622140800331B66 /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E55C5B722622133F00331B66 /* Sources */ = {
+		E55C5C282622191800331B66 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E55C5B7B2622133F00331B66 /* FaraTests.swift in Sources */,
+				E55C5C2F2622191800331B66 /* FaraUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E55C5B7D2622133F00331B66 /* Sources */ = {
+		E55C5C382622192100331B66 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E55C5B862622133F00331B66 /* FaraUITests.swift in Sources */,
+				E55C5C3F2622192100331B66 /* FaraTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E55C5B782622133F00331B66 /* PBXTargetDependency */ = {
+		E55C5C322622191800331B66 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E55C5B5F2622133E00331B66 /* Fara */;
-			targetProxy = E55C5B772622133F00331B66 /* PBXContainerItemProxy */;
+			targetProxy = E55C5C312622191800331B66 /* PBXContainerItemProxy */;
 		};
-		E55C5B832622133F00331B66 /* PBXTargetDependency */ = {
+		E55C5C422622192100331B66 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E55C5B5F2622133E00331B66 /* Fara */;
-			targetProxy = E55C5B822622133F00331B66 /* PBXContainerItemProxy */;
+			targetProxy = E55C5C412622192100331B66 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -438,7 +526,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7GD7NQ8T4N;
-				INFOPLIST_FILE = Fara/Info.plist;
+				INFOPLIST_FILE = Fara/Config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,7 +545,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7GD7NQ8T4N;
-				INFOPLIST_FILE = Fara/Info.plist;
+				INFOPLIST_FILE = Fara/Config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,87 +557,81 @@
 			};
 			name = Release;
 		};
-		E55C5B8E2622133F00331B66 /* Debug */ = {
+		E55C5C342622191800331B66 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7GD7NQ8T4N;
-				INFOPLIST_FILE = FaraTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				INFOPLIST_FILE = FaraUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ferchmin.FaraTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferchmin.FaraUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fara.app/Fara";
+				TEST_TARGET_NAME = Fara;
 			};
 			name = Debug;
 		};
-		E55C5B8F2622133F00331B66 /* Release */ = {
+		E55C5C352622191800331B66 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7GD7NQ8T4N;
-				INFOPLIST_FILE = FaraTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				INFOPLIST_FILE = FaraUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ferchmin.FaraTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferchmin.FaraUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fara.app/Fara";
+				TEST_TARGET_NAME = Fara;
 			};
 			name = Release;
 		};
-		E55C5B912622133F00331B66 /* Debug */ = {
+		E55C5C442622192100331B66 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7GD7NQ8T4N;
-				INFOPLIST_FILE = FaraUITests/Info.plist;
+				INFOPLIST_FILE = FaraTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ferchmin.FaraUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferchmin.FaraTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Fara;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fara.app/Fara";
 			};
 			name = Debug;
 		};
-		E55C5B922622133F00331B66 /* Release */ = {
+		E55C5C452622192100331B66 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7GD7NQ8T4N;
-				INFOPLIST_FILE = FaraUITests/Info.plist;
+				INFOPLIST_FILE = FaraTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ferchmin.FaraUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferchmin.FaraTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Fara;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fara.app/Fara";
 			};
 			name = Release;
 		};
@@ -574,25 +656,77 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E55C5B8D2622133F00331B66 /* Build configuration list for PBXNativeTarget "FaraTests" */ = {
+		E55C5C332622191800331B66 /* Build configuration list for PBXNativeTarget "FaraUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E55C5B8E2622133F00331B66 /* Debug */,
-				E55C5B8F2622133F00331B66 /* Release */,
+				E55C5C342622191800331B66 /* Debug */,
+				E55C5C352622191800331B66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E55C5B902622133F00331B66 /* Build configuration list for PBXNativeTarget "FaraUITests" */ = {
+		E55C5C432622192100331B66 /* Build configuration list for PBXNativeTarget "FaraTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E55C5B912622133F00331B66 /* Debug */,
-				E55C5B922622133F00331B66 /* Release */,
+				E55C5C442622192100331B66 /* Debug */,
+				E55C5C452622192100331B66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E55C5BB42622154500331B66 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.0;
+			};
+		};
+		E55C5BC22622158E00331B66 /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E55C5BB52622154500331B66 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E55C5BB42622154500331B66 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		E55C5BB92622154500331B66 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E55C5BB42622154500331B66 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		E55C5BBB2622154500331B66 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E55C5BB42622154500331B66 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		E55C5BBD2622154500331B66 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E55C5BB42622154500331B66 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		E55C5BC32622158E00331B66 /* RxDataSources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E55C5BC22622158E00331B66 /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = RxDataSources;
+		};
+		E55C5BC52622158E00331B66 /* Differentiator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E55C5BC22622158E00331B66 /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = Differentiator;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E55C5B582622133E00331B66 /* Project object */;
 }
