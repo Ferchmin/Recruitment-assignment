@@ -15,6 +15,10 @@ protocol FAQuery {
     var method: HttpMethod { get }
 }
 
+extension FAQuery {
+    var parameters: [String: Any] { [:] }
+}
+
 enum HttpMethod: String {
     case get
     case post

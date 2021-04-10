@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E55C5B642622133E00331B66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C5B632622133E00331B66 /* AppDelegate.swift */; };
-		E55C5B682622133E00331B66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C5B672622133E00331B66 /* ViewController.swift */; };
-		E55C5B6B2622133E00331B66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E55C5B692622133E00331B66 /* Main.storyboard */; };
+		E55C5B682622133E00331B66 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C5B672622133E00331B66 /* UsersViewController.swift */; };
+		E55C5B6B2622133E00331B66 /* Users.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E55C5B692622133E00331B66 /* Users.storyboard */; };
 		E55C5B6D2622133E00331B66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E55C5B6C2622133E00331B66 /* Assets.xcassets */; };
 		E55C5B702622133E00331B66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E55C5B6E2622133E00331B66 /* LaunchScreen.storyboard */; };
 		E55C5BA32622140800331B66 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C5BA22622140800331B66 /* Config.swift */; };
@@ -23,6 +23,9 @@
 		E55C5BD02622167600331B66 /* FARequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C5BCF2622167600331B66 /* FARequest.swift */; };
 		E55C5C2F2622191800331B66 /* FaraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C5C2E2622191800331B66 /* FaraUITests.swift */; };
 		E55C5C3F2622192100331B66 /* FaraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C5C3E2622192100331B66 /* FaraTests.swift */; };
+		E55C5C4B2622218800331B66 /* FAUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C5C4A2622218800331B66 /* FAUser.swift */; };
+		E55C5C532622220B00331B66 /* FAAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C5C522622220B00331B66 /* FAAddress.swift */; };
+		E55C5C5B262223CB00331B66 /* FACompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C5C5A262223CB00331B66 /* FACompany.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +48,8 @@
 /* Begin PBXFileReference section */
 		E55C5B602622133E00331B66 /* Fara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fara.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E55C5B632622133E00331B66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E55C5B672622133E00331B66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E55C5B6A2622133E00331B66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E55C5B672622133E00331B66 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		E55C5B6A2622133E00331B66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Users.storyboard; sourceTree = "<group>"; };
 		E55C5B6C2622133E00331B66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E55C5B6F2622133E00331B66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E55C5B712622133E00331B66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,6 +66,9 @@
 		E55C5C3C2622192100331B66 /* FaraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E55C5C3E2622192100331B66 /* FaraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaraTests.swift; sourceTree = "<group>"; };
 		E55C5C402622192100331B66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E55C5C4A2622218800331B66 /* FAUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAUser.swift; sourceTree = "<group>"; };
+		E55C5C522622220B00331B66 /* FAAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAAddress.swift; sourceTree = "<group>"; };
+		E55C5C5A262223CB00331B66 /* FACompany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FACompany.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,9 +131,8 @@
 				E55C5B9F262213A100331B66 /* Resources */,
 				E55C5BA0262213C000331B66 /* Config */,
 				E55C5BB3262214C400331B66 /* Networking */,
+				E55C5C492622218200331B66 /* Models */,
 				E55C5BA1262213D100331B66 /* Views */,
-				E55C5B672622133E00331B66 /* ViewController.swift */,
-				E55C5B692622133E00331B66 /* Main.storyboard */,
 			);
 			path = Fara;
 			sourceTree = "<group>";
@@ -171,6 +176,8 @@
 		E55C5BA1262213D100331B66 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E55C5C5F2622244F00331B66 /* Users */,
+				E55C5C602622245800331B66 /* UserDetails */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,6 +207,32 @@
 				E55C5C402622192100331B66 /* Info.plist */,
 			);
 			path = FaraTests;
+			sourceTree = "<group>";
+		};
+		E55C5C492622218200331B66 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E55C5C4A2622218800331B66 /* FAUser.swift */,
+				E55C5C522622220B00331B66 /* FAAddress.swift */,
+				E55C5C5A262223CB00331B66 /* FACompany.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E55C5C5F2622244F00331B66 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				E55C5B672622133E00331B66 /* UsersViewController.swift */,
+				E55C5B692622133E00331B66 /* Users.storyboard */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		E55C5C602622245800331B66 /* UserDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UserDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,7 +352,7 @@
 			files = (
 				E55C5B702622133E00331B66 /* LaunchScreen.storyboard in Resources */,
 				E55C5B6D2622133E00331B66 /* Assets.xcassets in Resources */,
-				E55C5B6B2622133E00331B66 /* Main.storyboard in Resources */,
+				E55C5B6B2622133E00331B66 /* Users.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,8 +377,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E55C5C5B262223CB00331B66 /* FACompany.swift in Sources */,
+				E55C5C532622220B00331B66 /* FAAddress.swift in Sources */,
 				E55C5BD02622167600331B66 /* FARequest.swift in Sources */,
-				E55C5B682622133E00331B66 /* ViewController.swift in Sources */,
+				E55C5B682622133E00331B66 /* UsersViewController.swift in Sources */,
+				E55C5C4B2622218800331B66 /* FAUser.swift in Sources */,
 				E55C5BCB2622164000331B66 /* FAQuery.swift in Sources */,
 				E55C5B642622133E00331B66 /* AppDelegate.swift in Sources */,
 				E55C5BA32622140800331B66 /* Config.swift in Sources */,
@@ -384,12 +420,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E55C5B692622133E00331B66 /* Main.storyboard */ = {
+		E55C5B692622133E00331B66 /* Users.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E55C5B6A2622133E00331B66 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Users.storyboard;
 			sourceTree = "<group>";
 		};
 		E55C5B6E2622133E00331B66 /* LaunchScreen.storyboard */ = {
