@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E54DC7582622E82F00DCB274 /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54DC7572622E82F00DCB274 /* UsersViewModel.swift */; };
+		E54DC7602622EA6B00DCB274 /* UserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54DC75F2622EA6B00DCB274 /* UserCellViewModel.swift */; };
 		E55C5B642622133E00331B66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C5B632622133E00331B66 /* AppDelegate.swift */; };
 		E55C5B682622133E00331B66 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C5B672622133E00331B66 /* UsersViewController.swift */; };
 		E55C5B6B2622133E00331B66 /* Users.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E55C5B692622133E00331B66 /* Users.storyboard */; };
@@ -51,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E54DC7572622E82F00DCB274 /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
+		E54DC75F2622EA6B00DCB274 /* UserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellViewModel.swift; sourceTree = "<group>"; };
 		E55C5B602622133E00331B66 /* Fara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fara.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E55C5B632622133E00331B66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E55C5B672622133E00331B66 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
@@ -235,6 +239,7 @@
 			children = (
 				E55C5B692622133E00331B66 /* Users.storyboard */,
 				E55C5B672622133E00331B66 /* UsersViewController.swift */,
+				E54DC7572622E82F00DCB274 /* UsersViewModel.swift */,
 				E55C5C772622261300331B66 /* Cells */,
 			);
 			path = Users;
@@ -254,6 +259,7 @@
 			children = (
 				E55C5C792622262D00331B66 /* UserTableViewCell.xib */,
 				E55C5C782622262D00331B66 /* UserTableViewCell.swift */,
+				E54DC75F2622EA6B00DCB274 /* UserCellViewModel.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -411,6 +417,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E55C5C5B262223CB00331B66 /* FACompany.swift in Sources */,
+				E54DC7582622E82F00DCB274 /* UsersViewModel.swift in Sources */,
+				E54DC7602622EA6B00DCB274 /* UserCellViewModel.swift in Sources */,
 				E55C5C532622220B00331B66 /* FAAddress.swift in Sources */,
 				E55C5BD02622167600331B66 /* FARequest.swift in Sources */,
 				E55C5B682622133E00331B66 /* UsersViewController.swift in Sources */,

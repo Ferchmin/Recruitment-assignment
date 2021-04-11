@@ -6,24 +6,24 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 class UserDetailsViewController: UIViewController {
-
+    
+    @IBOutlet private var backButton: UIButton!
+    
+    private let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        bind()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func bind() {
+        backButton.rx.tap
+            .subscribe(onNext: { [unowned self] in
+                        self.navigationController?.popViewController(animated: true) })
+            .disposed(by: disposeBag)
     }
-    */
-
 }

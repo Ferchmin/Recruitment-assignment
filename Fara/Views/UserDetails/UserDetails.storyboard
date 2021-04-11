@@ -8,20 +8,60 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--User Details View Controller-->
         <scene sceneID="oje-YT-M8Y">
             <objects>
-                <viewController id="kKp-Cg-7qW" sceneMemberID="viewController">
+                <viewController id="kKp-Cg-7qW" customClass="UserDetailsViewController" customModule="Fara" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EcV-yr-EvI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VmP-fe-MZI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GhN-W7-GmO">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <subviews>
+                                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7JT-S0-Kvh">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="866"/>
+                                            </mapView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lup-nH-shS">
+                                                <rect key="frame" x="0.0" y="866" width="414" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrl-2O-uIC">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="GhN-W7-GmO" secondAttribute="trailing" id="66x-DQ-twJ"/>
+                                    <constraint firstItem="GhN-W7-GmO" firstAttribute="top" secondItem="VmP-fe-MZI" secondAttribute="top" id="Nmo-eu-WcX"/>
+                                    <constraint firstItem="GhN-W7-GmO" firstAttribute="leading" secondItem="VmP-fe-MZI" secondAttribute="leading" id="o49-Wk-z8P"/>
+                                    <constraint firstAttribute="bottom" secondItem="GhN-W7-GmO" secondAttribute="bottom" id="zB8-Xx-Yvk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="CgD-21-5qc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VmP-fe-MZI" firstAttribute="leading" secondItem="EcV-yr-EvI" secondAttribute="leading" id="PUk-ee-cDq"/>
+                            <constraint firstAttribute="trailing" secondItem="VmP-fe-MZI" secondAttribute="trailing" id="Smu-qC-Gjy"/>
+                            <constraint firstAttribute="bottom" secondItem="VmP-fe-MZI" secondAttribute="bottom" id="chA-vO-n06"/>
+                            <constraint firstItem="VmP-fe-MZI" firstAttribute="top" secondItem="EcV-yr-EvI" secondAttribute="top" id="kjS-6X-UhK"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backButton" destination="jrl-2O-uIC" id="97z-F5-hg3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tRa-Fc-xuz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-465" y="299"/>
+            <point key="canvasLocation" x="-465.21739130434787" y="298.66071428571428"/>
         </scene>
     </scenes>
     <resources>
