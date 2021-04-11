@@ -26,8 +26,6 @@ class UserDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        mapView.delegate = self
-
         guard let viewModel = mainViewModel else { return }
         bind(viewModel)
         bindView(with: viewModel)
@@ -45,7 +43,9 @@ class UserDetailsViewController: UIViewController {
             }
             .subscribe(onNext: { [unowned self] annotation in
                 self.mapView.addAnnotation(annotation)
-                let region = MKCoordinateRegion(center: annotation.coordinate, latitudinalMeters: 1500, longitudinalMeters: 1500)
+                let span = MKCoordinateSpan(latitudeDelta: 10, longitudeDelta: 10)
+                let region = MKCoordinateRegion(center: annotation.coordinate, span: span)
+                //let region = MKCoordinateRegion(center: annotation.coordinate, latitudinalMeters: 1500, longitudinalMeters: 1500)
                 self.mapView.setRegion(region, animated: true)
             })
             .disposed(by: disposeBag)
