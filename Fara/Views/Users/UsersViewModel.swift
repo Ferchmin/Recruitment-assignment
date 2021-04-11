@@ -7,11 +7,15 @@
 
 import Foundation
 import RxCocoa
+import RxDataSources
 import RxSwift
 
 class UsersViewModel {
 
-    public var users: Observable<[UserCellViewModel]> { model.map { $0.map { UserCellViewModel(model: $0) } } }
+    public var dataSource: Observable<[SectionModel<String, UserCellViewModel>]> {
+        model.map { $0.map { UserCellViewModel(model: $0) } }
+            .map { [SectionModel(model: "", items: $0)] }
+    }
 
     private let disposeBag = DisposeBag()
 

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		E54DC7582622E82F00DCB274 /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54DC7572622E82F00DCB274 /* UsersViewModel.swift */; };
 		E54DC7602622EA6B00DCB274 /* UserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54DC75F2622EA6B00DCB274 /* UserCellViewModel.swift */; };
+		E54DC7652622FBC800DCB274 /* UserDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54DC7642622FBC800DCB274 /* UserDetailsViewModel.swift */; };
+		E54DC76A26239F6300DCB274 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54DC76926239F6300DCB274 /* CustomView.swift */; };
 		E55C5B642622133E00331B66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C5B632622133E00331B66 /* AppDelegate.swift */; };
 		E55C5B682622133E00331B66 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C5B672622133E00331B66 /* UsersViewController.swift */; };
 		E55C5B6B2622133E00331B66 /* Users.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E55C5B692622133E00331B66 /* Users.storyboard */; };
@@ -55,6 +57,8 @@
 /* Begin PBXFileReference section */
 		E54DC7572622E82F00DCB274 /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
 		E54DC75F2622EA6B00DCB274 /* UserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellViewModel.swift; sourceTree = "<group>"; };
+		E54DC7642622FBC800DCB274 /* UserDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewModel.swift; sourceTree = "<group>"; };
+		E54DC76926239F6300DCB274 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		E55C5B602622133E00331B66 /* Fara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fara.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E55C5B632622133E00331B66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E55C5B672622133E00331B66 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
@@ -250,6 +254,7 @@
 			children = (
 				E55C5C6F262224F900331B66 /* UserDetails.storyboard */,
 				E55C5C6A262224EF00331B66 /* UserDetailsViewController.swift */,
+				E54DC7642622FBC800DCB274 /* UserDetailsViewModel.swift */,
 			);
 			path = UserDetails;
 			sourceTree = "<group>";
@@ -268,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				E55C5C86262229F500331B66 /* LoadableCell.swift */,
+				E54DC76926239F6300DCB274 /* CustomView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -420,6 +426,7 @@
 				E54DC7582622E82F00DCB274 /* UsersViewModel.swift in Sources */,
 				E54DC7602622EA6B00DCB274 /* UserCellViewModel.swift in Sources */,
 				E55C5C532622220B00331B66 /* FAAddress.swift in Sources */,
+				E54DC7652622FBC800DCB274 /* UserDetailsViewModel.swift in Sources */,
 				E55C5BD02622167600331B66 /* FARequest.swift in Sources */,
 				E55C5B682622133E00331B66 /* UsersViewController.swift in Sources */,
 				E55C5C7A2622262D00331B66 /* UserTableViewCell.swift in Sources */,
@@ -427,6 +434,7 @@
 				E55C5BCB2622164000331B66 /* FAQuery.swift in Sources */,
 				E55C5B642622133E00331B66 /* AppDelegate.swift in Sources */,
 				E55C5C87262229F500331B66 /* LoadableCell.swift in Sources */,
+				E54DC76A26239F6300DCB274 /* CustomView.swift in Sources */,
 				E55C5BA32622140800331B66 /* Config.swift in Sources */,
 				E55C5C6B262224EF00331B66 /* UserDetailsViewController.swift in Sources */,
 			);

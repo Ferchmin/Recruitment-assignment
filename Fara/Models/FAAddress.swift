@@ -24,11 +24,18 @@ struct FAAddress: Codable {
 }
 
 struct FACoordinates: Codable {
-    let latitude: String
-    let longitude: String
+    private let latitudeString: String
+    private let longitudeString: String
+
+    var latitude: Double? {
+        Double(latitudeString)
+    }
+    var longitude: Double? {
+        Double(longitudeString)
+    }
 
     private enum CodingKeys: String, CodingKey {
-        case latitude = "lat"
-        case longitude = "lng"
+        case latitudeString = "lat"
+        case longitudeString = "lng"
     }
 }
