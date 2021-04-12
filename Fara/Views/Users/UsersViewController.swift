@@ -37,7 +37,6 @@ class UsersViewController: UIViewController {
         let dataSource = DataSource { _, tableView, indexPath, item in
             let cell = tableView.dequeueReusableCell(withIdentifier: UserTableViewCell.cellIdentifier, for: indexPath)
             (cell as? UserTableViewCell)?.mainViewModel = item
-            //print(indexPath.row)
             return cell
         }
 

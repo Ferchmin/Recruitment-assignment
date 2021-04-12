@@ -32,6 +32,6 @@ struct FAUser: Codable {
 struct UsersQuery: FAQuery {
     typealias ResultType = [FAUser]
 
-    var url: URL { Config().baseUrl.appendingPathComponent("/users") }
+    var url: URL { Config.baseUrl.appendingPathComponent("/users") }
     var method: HttpMethod { .get }
 }

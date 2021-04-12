@@ -9,9 +9,9 @@ import Foundation
 
 struct Config {
 
-    private let apiBaseUrl = "http://jsonplaceholder.typicode.com"
+    private static let apiBaseUrl = "http://jsonplaceholder.typicode.com"
 
-    var baseUrl: URL {
+    static var baseUrl: URL {
         guard let url = URL(string: apiBaseUrl) else { fatalError("Base URL invalid.") }
         return url
     }

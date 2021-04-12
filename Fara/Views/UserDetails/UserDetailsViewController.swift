@@ -33,7 +33,6 @@ class UserDetailsViewController: UIViewController {
 
     private func bind(_ viewModel: UserDetailsViewModel) {
         viewModel.coordinates
-            .delay(.milliseconds(500), scheduler: MainScheduler.instance)
             .compactMap { coordinate -> MKPointAnnotation? in
                 guard let latitude = coordinate.latitude,
                       let longitude = coordinate.longitude else { return nil }
@@ -43,15 +42,15 @@ class UserDetailsViewController: UIViewController {
             }
             .subscribe(onNext: { [unowned self] annotation in
                 self.mapView.addAnnotation(annotation)
-                let span = MKCoordinateSpan(latitudeDelta: 10, longitudeDelta: 10)
-                let region = MKCoordinateRegion(center: annotation.coordinate, span: span)
-                //let region = MKCoordinateRegion(center: annotation.coordinate, latitudinalMeters: 1500, longitudinalMeters: 1500)
+                let region = MKCoordinateRegion(center: annotation.coordinate,
+                                                span: MKCoordinateSpan(latitudeDelta: 10, longitudeDelta: 10))
                 self.mapView.setRegion(region, animated: true)
             })
             .disposed(by: disposeBag)
 
         viewModel.name.bind(to: nameLabel.rx.text).disposed(by: disposeBag)
         viewModel.address.bind(to: addressLabel.rx.text).disposed(by: disposeBag)
+
         viewModel.email
             .map { email -> NSAttributedString in
                 let range = (email as NSString).range(of: "Email:")
