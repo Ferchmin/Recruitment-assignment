@@ -25,7 +25,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="GhN-W7-GmO">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lfk-HN-TRc" customClass="CustomView" customModule="Fara" customModuleProvider="target">
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lfk-HN-TRc" customClass="CustomView" customModule="Fara" customModuleProvider="target">
                                                         <rect key="frame" x="30" y="84" width="354" height="498"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cyb-cn-54n">
